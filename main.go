@@ -31,7 +31,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
     return
   }
 
-  fmt.Fprintf(w, "%d + %d = %d", a, b, sum(a,a))
+
+  fmt.Fprintf(w, "%d + %d = %d", a, b, sum(a,b))
 }
 
 func main() {
